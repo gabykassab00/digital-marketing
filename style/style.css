@@ -16,7 +16,7 @@
     --color-grey-rgb:132,145,165;
     --primary-linear-gradient:linear-gradient(90deg,
     #21DADB,0%,
-    rgba(84,42,195,1)100%);
+    rgba(33,218,219,1)100%);
     --secondary-linear-gradient:linear-gradient(90deg,
     rgba(225,99,151,1)0%,
     rgba(254,126,169,1)100%);
@@ -66,18 +66,23 @@
         cursor: pointer;
         border-radius: 50px;
         width: fit-content;
+
     }
 
     .btn-primary{
         background: var(--primary-linear-gradient);
         color: var(--color-white);
-
+        display: block; 
+        margin: 20px auto; 
+        width: fit-content; 
     }
 
     .btn-secondary{
         background: var(--secondary-linear-gradient);
         color: var(--color-white);
-
+        display: block; 
+        margin: 20px auto; 
+        width: fit-content; 
     }
 
     .tag{
@@ -95,7 +100,10 @@
 
     header{
         background: var(--primary-linear-gradient);
-
+        padding: 20px;
+        border-bottom: 5px solid rgba(34, 85, 153, 1); 
+        z-index: 100;
+        position: relative;
     }
 
     .nav{
@@ -115,15 +123,13 @@
     gap: 3rem;
     align-items: center;
     justify-content: flex-end;
+    border-bottom: 15px solid rgba(34, 85, 153, 1);
 }
 .nav__link{
     color: var(--color-white);
 
 }
-/* .mb-show{
-    display:none;
 
-} */
 .show{
     right:0%;
 }
@@ -260,6 +266,7 @@ border-radius: 10px;
 }
 .services {
     background: var(--primary-linear-gradient);
+    padding: 20px;
 }
 
 .services__tag{
@@ -269,6 +276,7 @@ border-radius: 10px;
     font-size:2.5rem;
     font-weight: 200;
     color: var(--color-white);
+    text-align: center;
 }
 
 .services__data{
@@ -283,8 +291,9 @@ border-radius: 10px;
     display: flex;
     gap: 1.5rem;
     padding: 5px;
-    flex: 25%;
+    flex: 1 1 30%;
     align-items: center;
+    margin: 10px;
 }
 .services__single i {
 font-size: 2rem;
@@ -300,6 +309,7 @@ color: var(--color-white);
     justify-content: flex-start;
     gap: 2rem;
 }
+
 
 .testimonial__tag span {
     color:--var(--color-primary);
@@ -360,7 +370,6 @@ color: var(--color-white);
     text-align: center;
     font-size: 18px;
 
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -509,5 +518,11 @@ height: 50px;
     margin-top: 10px;
     border-top: 1px solid var(--color-grey);
 }
+.about__data {
+    transform: translateY(50px); 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
 
 @media screen and (max-width: 1024px) {}

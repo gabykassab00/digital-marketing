@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Initialize Swiper
     const swiper = new Swiper(".myswiper", {
       cssMode: true,
       loop: true,
