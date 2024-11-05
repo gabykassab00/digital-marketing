@@ -400,7 +400,59 @@ color: var(--color-white);
   .swiper-pagination-button-active{
     background-color: var(--color-white) !important;
   }
+.contact{
+    background: var(--primary-linear-gradient);
 
+}
+.contact__tag{
+    color: rgba(255,255,255,0.2);
+    color: var(--color-white);
+    text-align: center;
+}
 
+.contact__title{
+    font-size: 2.5rem;
+    font-weight:200;
+    color: var(--color-white);
+
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 20px 0 ;
+}
+
+.contact__form > input:not(.btn){
+height: 50px;
+
+}
+
+.contact__form > textarea {
+    resize: none;
+    padding-top: 10px;
+
+}
+
+.contact__form > input:not(.btn),
+.contact__form>textarea{
+    width: 40%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 25px;
+    outline: none;
+    text-indent: 10px;
+}
+
+.contact__button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.contact__btn{
+    border: none;
+    
+}
 
 @media screen and (max-width: 1024px) {}
